@@ -1,0 +1,23 @@
+---
+name: Sync labels in the declarative way (does not delete)
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync-labels:
+    runs-on: ubuntu-latest
+    if: github.repository == 'knowii-oss/.github'
+    strategy:
+      matrix:
+        repository:
+          - knowii-oss/knowii
+    steps:
+      - uses: actions/checkout@v2
+      - uses: micnncim/action-label-syncer@v1.3.0
+        with:
+          manifest: .github/labels.yml
+          repository: ${{ matrix.repository }}
+          token: ${{ secrets.ORG_GITHUB_TOKEN }}
+          prune: false
