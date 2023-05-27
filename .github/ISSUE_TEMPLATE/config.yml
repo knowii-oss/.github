@@ -1,8 +1,11 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Private Discussion
-    url: "mailto:contact@developassion.be"
-    about: "If you have a question you would like to discuss in private, then please ask via email."
+  - name: Discussion
+    url: "https://github.com/orgs/knowii-oss/discussions"
+    about: "If you have a question you would like to discuss with the community, then use our public forum."
   - name: Real-time chat
     url: https://dsebastien.net/pkm-community
     about: "If you want to meet others in the community and chat about all things Knowii, then check out our Slack."
+  - name: Private Discussion
+    url: "mailto:contact@developassion.be"
+    about: "If you have a question you would like to discuss in private, then please ask via email."
