@@ -129,7 +129,7 @@
 
 - name: config
   color: 1586c0
-  description: ""
+  description: "Configuration related"
 
 - name: privacy
   color: 8DF9C3
@@ -201,7 +201,7 @@
 
 - name: troubleshooting
   color: 2EE6E3
-  description: ""
+  description: "Troubleshooting"
 
 - name: operations
   color: F18A86
